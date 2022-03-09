@@ -76,7 +76,7 @@
     text-align: {{section.settings.content_alignement}};
   }
   .text_container {
-    width: 50%;
+    width: {{section.settings.text_block_size}}%;
     opacity: 0.8;
     margin: auto;
     <!-- background: yellowgreen; -->
@@ -194,6 +194,16 @@
                           "label": "Overlay Size",
                           "default": 0
                         },
+                        {
+                            "type": "range",
+                            "id": "text_block_size",
+                            "min": 10,
+                            "max": 100,
+                            "step": 5,
+                            "unit": "%",
+                            "label": "Text Block Width",
+                            "default": 50
+                          },
                         {
                           "type": "text",
                           "id": "header_text",
