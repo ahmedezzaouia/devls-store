@@ -372,3 +372,28 @@
    ]
 }
 {% endschema %}
+
+
+
+<script>
+
+  const header = document.querySelector('header');
+  const videoSection = document.querySelector('.video-section');
+
+  const sectionOptions = {
+    rootMargin:'-400px 0px 0px 0px' 
+   }
+
+  const sectionObserver = new IntersectionObserver(function (entries,sectionObserver) {
+    entries.forEach(entry=> {
+     if(!entry.isIntersecting)
+     {
+       header.style.display = 'none'
+     }else{
+      header.style.display = 'flex'
+     }
+    });
+  },sectionOptions);
+
+  sectionObserver.observe(videoSection)
+</script>

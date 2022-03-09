@@ -767,6 +767,8 @@
 
 
 {% style %}
+{% if  template.name == "index" %}
+  
 header{
   background: transparent;
   position: absolute;
@@ -774,4 +776,5 @@ header{
 .header-wrapper{
   border:none
 }
+{% endif %}
 {% endstyle %}
