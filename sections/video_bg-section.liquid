@@ -42,7 +42,7 @@
   .video-container video {
     object-fit: cover;
     <!-- width: 100vw; -->
-    <!-- height: 100vh; -->
+   
   }
   .video-overlay{
     position: absolute;
@@ -125,6 +125,13 @@
   }
   .video-content a :hover{
    background:#261e1459
+  }
+
+    /* ************************ Large Screen ******************* */
+  @media only screen and (min-width: 1900px) {
+    .video-container video {
+      width: 100vw;
+    }
   }
   /* ************************ Mobile Design ******************* */
   @media only screen and (max-width: 770px) {
