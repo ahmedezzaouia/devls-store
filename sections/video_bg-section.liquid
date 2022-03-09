@@ -29,7 +29,10 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-     background:url("https://i.stack.imgur.com/PtbGQ.png") 
+    {% if section.settings.video_link == nil %}
+      
+    background:url("https://eu.vibram.com/on/demandware.static/-/Sites-VibramEU-Library/default/dwda073688/video-placeholder.png") 
+    {% endif %}
   }
   
   .video-container {
