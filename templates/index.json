@@ -1,7 +1,37 @@
 {
   "sections": {
+    "16468460015537192c": {
+      "type": "video_bg-section",
+      "settings": {
+        "video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0634\/9612\/6682\/files\/3155187831-v2.mp4?v=1646847811",
+        "overlay-bg_color": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(0, 0, 0, 1) 100%)",
+        "overlay_size": 0,
+        "text_block_size": 50,
+        "header_text": "Fresh finds",
+        "paragraph_text": "<p>up your collection for spring with these unique pieces! Shop the latest styles from a variety of designers here at Local Eclectic.<\/p>",
+        "show_btn": true,
+        "btn_link": "",
+        "btn_text": "Shop Now",
+        "reset_xy": false,
+        "x_margin": 27,
+        "y_margin": 45,
+        "content_alignement": "center",
+        "heading_font": "helvetica_n4",
+        "heading_font_size": 50,
+        "heading_color": "#FFFFFF",
+        "paragraph_font": "helvetica_n4",
+        "paragraph_font_size": 20,
+        "paragraph_color": "#FFFFFF",
+        "btn_font": "helvetica_n4",
+        "btn_title_color": "#FFFFFF",
+        "btn_border-color": "#FFFFFF",
+        "btn_bg_color": "transparent",
+        "btn_border_rdx": 20
+      }
+    },
     "image_banner": {
       "type": "image-banner",
+      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -102,20 +132,20 @@
         "collection-0": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "frontpage"
           }
         },
         "product": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "pink-armchair",
             "second_image": false
           }
         },
         "collection-1": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "frontpage"
           }
         }
       },
@@ -133,80 +163,13 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
+    "16468460015537192c",
     "image_banner",
     "rich_text",
     "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "collage"
   ]
 }
