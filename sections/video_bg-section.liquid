@@ -1,9 +1,6 @@
 <section class="video-section">
     <div class="video-container">
         <div class="video-overlay"><span></span></div>
-        {% if section.settings.video_link == nil %}
-            <img class="placehder"  src="https://cdn.msgsndr.com/location%2FxrssH7q94k98ahIqxBEi%2Fimages%2F518964c3-25d4-4d5c-aa4f-321446b7d381.jpeg?alt=media" alt="">
-         {% endif %}
             <video autoplay loop muted>
               <source src="{{section.settings.video_link}}" type="video/mp4">
             </video>
@@ -32,13 +29,9 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-     background-color: blueviolet; 
+     background:url("https://cdn.msgsndr.com/location%2FxrssH7q94k98ahIqxBEi%2Fimages%2F518964c3-25d4-4d5c-aa4f-321446b7d381.jpeg?alt=media") 
   }
-  .placehder{
-  position:absolute;
-  height: 67vh;
-  width:100vw
-  }
+  
   .video-container {
     justify-content: center;
     align-items: center;
@@ -135,12 +128,7 @@
     .video-section {
       height: 400px;
     }
-    .placehder{
-      height: 49vh;
-    }
-    <!-- .video-container video {
-      height: 49vh;
-    } -->
+   
     .video-content h1 {
       font-size: 2.68rem;
     }
