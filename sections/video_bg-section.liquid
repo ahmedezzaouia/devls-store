@@ -186,6 +186,19 @@
                           "label": "Video link"
                         },
                         {
+                          "type": "checkbox",
+                          "id": "include_header",
+                          "label": "Include Header",
+                          "default": false
+                        },
+                        {
+                          "type": "checkbox",
+                          "id": "hide_header_scroll",
+                          "label": "Hide Header On Scroll",
+                          "info":"To See This Just Click Save And Refrech The Editor",
+                          "default": false
+                        },
+                        {
                           "type": "color_background",
                           "id": "overlay-bg_color",
                           "label": "Overlay Background Color",
@@ -389,42 +402,46 @@
 }
 {% endschema %}
 
-
-
+<!-- ************ script to hide the header After Scroll to botttom *********** -->
+{% if section.settings.hide_header_scroll == true %}
+    
+      <script>
+                const header = document.querySelector('header');
+                window.addEventListener('scroll',()=>{
+                          console.log(window.pageYOffset) 
+                              if(window.pageYOffset >= 600)
+                              {
+                                header.classList.add("hide-header");
+                              }
+                              else
+                              {
+                                header.classList.remove("hide-header");
+                              }
+                  })
   
-<script >
- 
-  const header = document.querySelector('header');
-  const videoSection = document.querySelector('.video-section');
-
-  
-window.addEventListener('scroll',()=>{
-  console.log(window.pageYOffset)
-  if(window.pageYOffset >= 600)
-  {
-    header.style.display = 'none';
-  }
-  else
-  {
-    header.style.display = 'flex';
-
-  }
-})
-  
-</script>
-
-<!-- ***************** style for header ************** -->
-{% style %}
-{% if  template.name == "index" %}
-header{
-  background: transparent;
-  position: absolute;
-}
-header span,header svg{
-  color:white !important
-}
-.header-wrapper{
-  border:none
-}
+     </script>
 {% endif %}
-{% endstyle %}
+
+<!-- ***************** Include header in Section ************** -->
+{% if section.settings.include_header == true%}
+            {% style %}
+            {% if  template.name == "index" %}
+            #shopify-section-header{
+              margin:0;
+              padding:0;
+            }
+            header{
+              background: transparent;
+              position: absolute;
+              width: 100vw;
+            }
+            header span,header svg{
+              color:white !important
+            }
+            .header-wrapper{
+              border:none
+            }
+            {% endif %}
+            {% endstyle %}
+
+{% endif %}
