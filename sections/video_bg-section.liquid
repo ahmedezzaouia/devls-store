@@ -144,7 +144,7 @@
   /* ************************ Mobile Design ******************* */
   @media only screen and (max-width: 770px) {
     .video-section {
-      height: 400px;
+      height: {{section.settings.video_height_mobile}}px;
     }
    
     .video-content h1 {
@@ -159,7 +159,6 @@
     padding: 3px;
     }
     .video-content button {
-   
       width: 115px;
       font-size: 12px;
       padding: 8px;
@@ -168,7 +167,7 @@
     .text_container {
       width: 80%;
       margin: auto;
-      margin-top: 78px;
+      margin-top: 70px;
     }
   }
   
@@ -217,8 +216,18 @@
                           "max": 1500,
                           "step": 15,
                           "unit": "px",
-                          "label": "Section Height",
+                          "label": "Section Height On Desktop",
                           "default": 750
+                        },
+                        {
+                          "type": "range",
+                          "id": "video_height_mobile",
+                          "min": 100,
+                          "max": 1500,
+                          "step": 20,
+                          "unit": "px",
+                          "label": "Section Height On Mobile",
+                          "default": 400
                         },
                         {
                           "type": "range",
