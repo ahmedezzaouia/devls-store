@@ -5,7 +5,7 @@
       "settings": {
         "video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0634\/9612\/6682\/files\/Local_Eclectic_-_Fine_Jewelry_Made_from_Independent_Designers.mp4?v=1646866394",
         "include_header": true,
-        "hide_header_scroll": false,
+        "hide_header_scroll": true,
         "poster_img": "shopify:\/\/shop_images\/a-bridge-sitting-in-thick-pink-and-purple-fog.jpg",
         "overlay-bg_color": "linear-gradient(180deg, rgba(255, 211, 226, 1), rgba(168, 255, 251, 1) 100%)",
         "video_height": 1185,
