@@ -21,6 +21,14 @@
 <!-- ************************* CSS Section *********************** -->
 
 {% style %}
+.show-header{
+  display:flex;
+
+}
+.hide-header{
+  display:none;
+
+}
 .video-section {
     position: relative;
     width: 100%;
@@ -383,25 +391,24 @@
 
 
 
-<script>
-
+  
+<script >
+ 
   const header = document.querySelector('header');
   const videoSection = document.querySelector('.video-section');
 
-  const sectionOptions = {
-    rootMargin:'-400px 0px 0px 0px' 
-   }
+  
+window.addEventListener('scroll',()=>{
+  console.log(window.pageYOffset)
+  if(window.pageYOffset >= 600)
+  {
+    header.style.display = 'none';
+  }
+  else
+  {
+    header.style.display = 'flex';
 
-  const sectionObserver = new IntersectionObserver(function (entries,sectionObserver) {
-    entries.forEach(entry=> {
-     if(!entry.isIntersecting)
-     {
-       header.style.display = 'none'
-     }else{
-      header.style.display = 'flex'
-     }
-    });
-  },sectionOptions);
-
-  sectionObserver.observe(videoSection)
+  }
+})
+  
 </script>
