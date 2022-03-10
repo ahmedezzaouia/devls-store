@@ -19,7 +19,7 @@
         "btn_text": "Shop Now",
         "reset_xy": true,
         "x_margin": 24,
-        "y_margin": 0,
+        "y_margin": 15,
         "content_alignement": "left",
         "content_alignement_mobile": "left",
         "heading_font": "arvo_n4",
