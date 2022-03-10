@@ -1,7 +1,7 @@
 <section class="video-section">
     <div class="video-container">
         <div class="video-overlay"><span></span></div>
-            <video autoplay loop muted>
+            <video autoplay loop muted poster="https://{{section.settings.poster_img | image_url}}">
               <source src="{{section.settings.video_link}}" type="video/mp4">
             </video>
     </div>
@@ -198,6 +198,12 @@
                           "info":"To See This Just Click Save And Refrech The Editor",
                           "default": false
                         },
+                        {
+                          "type": "image_picker",
+                          "id": "poster_img",
+                          "label": "Thumbnail Image",
+                          "info":"This helps When The Connection is Slow So it's good  to Show an Image before The Video loading"
+                        },                        
                         {
                           "type": "color_background",
                           "id": "overlay-bg_color",
