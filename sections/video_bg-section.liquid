@@ -149,25 +149,33 @@
    
     .video-content h1 {
       font-size: 2.68rem;
+      text-align:{{section.settings.content_alignement_mobile}}
     }
     .video-content p {
       line-height: 1.5;
       font-size: 1.3rem;
+      text-align:{{section.settings.content_alignement_mobile}}
+
     }
     .video-content a{
     margin: 1.2rem;
     padding: 3px;
-    }
+    justify-content:{{section.settings.content_alignement_mobile}};
+  }
     .video-content button {
       width: 115px;
       font-size: 12px;
       padding: 8px;
       margin:0;
+
+
     }
     .text_container {
       width: 80%;
       margin: auto;
       margin-top: 90px;
+     
+
     }
   }
   
@@ -308,7 +316,27 @@
                         {
                           "type": "select",
                           "id": "content_alignement",
-                          "label": "Text Position",
+                          "label": "Align Text Block On Desktop",
+                          "options": [
+                            {
+                              "value": "left",
+                              "label": "Left"
+                            },
+                            {
+                              "value": "center",
+                              "label": "Center"
+                            },
+                            {
+                              "value": "end",
+                              "label": "Right"
+                            }
+                          ],
+                          "default": "center"
+                        },
+                        {
+                          "type": "select",
+                          "id": "content_alignement_mobile",
+                          "label": "Align Text Block On Mobile",
                           "options": [
                             {
                               "value": "left",
